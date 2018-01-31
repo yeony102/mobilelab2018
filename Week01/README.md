@@ -1,1 +1,3 @@
-# mobile-lab-one-button-kit
+# MOBILE LAB: WEEK01
+## Yeonhee Lee
+### Bomb
