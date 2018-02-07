@@ -5,6 +5,6 @@
 *.psd
 *.sketch
 *.mindnode
-blog/
-Images/
-Sounds/
+blog
+Images
+Sounds
