@@ -1,0 +1,11 @@
+.DS_Store
+*.avi
+*.mkv
+*.ai
+*.psd
+*.sketch
+*.mindnode
+blog/
+Design/
+Resources/
+Assets.xcassets/
