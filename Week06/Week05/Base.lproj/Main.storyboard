@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AppleSDGothicNeo.ttc">
+            <string>AppleSDGothicNeo-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Week05" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OK0-wc-RY8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOOK AT THE SKY!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpZ-US-mV8">
+                                <rect key="frame" x="102" y="536" width="171" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="jm2-eo-9AL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.12129203680203049" green="0.12129203680203049" blue="0.12129203680203049" alpha="0.62280607876712324" colorSpace="custom" customColorSpace="displayP3"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OK0-wc-RY8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7I2-pm-81q"/>
+                            <constraint firstItem="kpZ-US-mV8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GiN-fC-UDD"/>
+                            <constraint firstItem="OK0-wc-RY8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Zbd-Yp-QSM"/>
+                            <constraint firstItem="OK0-wc-RY8" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="fo4-nL-BgM"/>
+                            <constraint firstItem="OK0-wc-RY8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-20" id="ucv-Gq-AAq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kpZ-US-mV8" secondAttribute="bottom" constant="106" id="y8G-9S-SqH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="filteredImage" destination="OK0-wc-RY8" id="G7F-L1-pIB"/>
+                        <outlet property="instLabel" destination="kpZ-US-mV8" id="FOG-6p-nPH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="105.69715142428787"/>
+        </scene>
+    </scenes>
+</document>
