@@ -1,3 +1,4 @@
+
 .DS_Store
 *.avi
 *.mkv
@@ -10,3 +11,5 @@ Design/
 Resources/
 Assets.xcassets/
 icon/
+Assets/
+Recordings/

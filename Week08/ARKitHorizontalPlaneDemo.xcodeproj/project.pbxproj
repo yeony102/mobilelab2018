@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F13FE3D206B715D006B50CC /* AJIdleFixed.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5F13FE37206B715C006B50CC /* AJIdleFixed.dae */; };
+		5F13FE3E206B715D006B50CC /* Boy01_diffuse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5F13FE39206B715C006B50CC /* Boy01_diffuse.jpg */; };
+		5F13FE3F206B715D006B50CC /* Boy01_spec.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5F13FE3A206B715C006B50CC /* Boy01_spec.jpg */; };
+		5F13FE40206B715D006B50CC /* Boy01_normal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5F13FE3B206B715C006B50CC /* Boy01_normal.jpg */; };
+		5F13FE41206B715D006B50CC /* Boy01_FacialAnimMap.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F13FE3C206B715C006B50CC /* Boy01_FacialAnimMap.png */; };
+		5FDCC550206B842D002C8D9D /* Boss_diffuse.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FDCC54C206B842D002C8D9D /* Boss_diffuse.png */; };
+		5FDCC551206B842D002C8D9D /* Boss_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FDCC54D206B842D002C8D9D /* Boss_normal.png */; };
+		5FDCC552206B842D002C8D9D /* Boss_specular.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FDCC54E206B842D002C8D9D /* Boss_specular.png */; };
+		5FDCC553206B842D002C8D9D /* BossExcitedFixed.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5FDCC54F206B842D002C8D9D /* BossExcitedFixed.dae */; };
+		5FDCC55A206B843A002C8D9D /* Girl01_FacialAnimMap.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FDCC555206B843A002C8D9D /* Girl01_FacialAnimMap.png */; };
+		5FDCC55B206B843A002C8D9D /* Girl01_spec.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FDCC556206B843A002C8D9D /* Girl01_spec.jpg */; };
+		5FDCC55C206B843A002C8D9D /* Girl01_normal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FDCC557206B843A002C8D9D /* Girl01_normal.jpg */; };
+		5FDCC55D206B843A002C8D9D /* Girl01_diffuse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FDCC558206B843A002C8D9D /* Girl01_diffuse.jpg */; };
+		5FDCC55E206B843A002C8D9D /* ClaireIdleFixed.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5FDCC559206B843A002C8D9D /* ClaireIdleFixed.dae */; };
+		5FDCC565206B8448002C8D9D /* GrannyBellydancingFixed.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5FDCC55F206B8448002C8D9D /* GrannyBellydancingFixed.dae */; };
+		5FDCC566206B8448002C8D9D /* FitnessGrandma_FaceAnimMap.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FDCC561206B8448002C8D9D /* FitnessGrandma_FaceAnimMap.png */; };
+		5FDCC567206B8448002C8D9D /* FitnessGrandma_spec.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FDCC562206B8448002C8D9D /* FitnessGrandma_spec.jpg */; };
+		5FDCC568206B8448002C8D9D /* FitnessGrandma_diffuse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FDCC563206B8448002C8D9D /* FitnessGrandma_diffuse.jpg */; };
+		5FDCC569206B8448002C8D9D /* FitnessGrandma_normal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FDCC564206B8448002C8D9D /* FitnessGrandma_normal.jpg */; };
+		5FDCC570206B8452002C8D9D /* OccupyGuy_normal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FDCC56B206B8452002C8D9D /* OccupyGuy_normal.jpg */; };
+		5FDCC571206B8452002C8D9D /* OccupyGuy_spec.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FDCC56C206B8452002C8D9D /* OccupyGuy_spec.jpg */; };
+		5FDCC572206B8452002C8D9D /* OccupyGuy_FaceAnimMap.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FDCC56D206B8452002C8D9D /* OccupyGuy_FaceAnimMap.png */; };
+		5FDCC573206B8452002C8D9D /* OccupyGuy_diffuse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FDCC56E206B8452002C8D9D /* OccupyGuy_diffuse.jpg */; };
+		5FDCC574206B8452002C8D9D /* KayaIdleFixed.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5FDCC56F206B8452002C8D9D /* KayaIdleFixed.dae */; };
+		5FDCC57E206B845E002C8D9D /* TYHappyFixed.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5FDCC575206B845E002C8D9D /* TYHappyFixed.dae */; };
+		5FDCC57F206B845E002C8D9D /* Boy_Hands_diffuse.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FDCC577206B845E002C8D9D /* Boy_Hands_diffuse.png */; };
+		5FDCC580206B845E002C8D9D /* Boy_Head_diffuse.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FDCC578206B845E002C8D9D /* Boy_Head_diffuse.png */; };
+		5FDCC581206B845E002C8D9D /* Boy_Scarf_diffuse.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FDCC579206B845E002C8D9D /* Boy_Scarf_diffuse.png */; };
+		5FDCC582206B845E002C8D9D /* Boy_UpperBody_diffuse.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FDCC57A206B845E002C8D9D /* Boy_UpperBody_diffuse.png */; };
+		5FDCC583206B845E002C8D9D /* Boy_Shoes_diffuse.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FDCC57B206B845E002C8D9D /* Boy_Shoes_diffuse.png */; };
+		5FDCC584206B845E002C8D9D /* Boy_Hair_diffuse.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FDCC57C206B845E002C8D9D /* Boy_Hair_diffuse.png */; };
+		5FDCC585206B845E002C8D9D /* Boy_LowerBody_diffuse.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FDCC57D206B845E002C8D9D /* Boy_LowerBody_diffuse.png */; };
+		5FDCC58B206B8468002C8D9D /* VegasHipHopFixed.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5FDCC586206B8468002C8D9D /* VegasHipHopFixed.dae */; };
+		5FDCC58C206B8468002C8D9D /* Elvis_FaceAnimMap.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FDCC588206B8468002C8D9D /* Elvis_FaceAnimMap.png */; };
+		5FDCC58D206B8468002C8D9D /* FatElvis_diffuse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FDCC589206B8468002C8D9D /* FatElvis_diffuse.jpg */; };
+		5FDCC58E206B8468002C8D9D /* FatElvis_normal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FDCC58A206B8468002C8D9D /* FatElvis_normal.jpg */; };
+		638A9CEE1FBA0605001D52ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A9CED1FBA0605001D52ED /* AppDelegate.swift */; };
+		638A9CF01FBA0605001D52ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A9CEF1FBA0605001D52ED /* ViewController.swift */; };
+		638A9CF31FBA0605001D52ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 638A9CF11FBA0605001D52ED /* Main.storyboard */; };
+		638A9CF51FBA0605001D52ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 638A9CF41FBA0605001D52ED /* Assets.xcassets */; };
+		638A9CF81FBA0605001D52ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 638A9CF61FBA0605001D52ED /* LaunchScreen.storyboard */; };
+		638A9D021FBA065D001D52ED /* ship.scn in Resources */ = {isa = PBXBuildFile; fileRef = 638A9D001FBA065D001D52ED /* ship.scn */; };
+		638A9D031FBA065D001D52ED /* ship.png in Resources */ = {isa = PBXBuildFile; fileRef = 638A9D011FBA065D001D52ED /* ship.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5F13FE37206B715C006B50CC /* AJIdleFixed.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = AJIdleFixed.dae; sourceTree = "<group>"; };
+		5F13FE39206B715C006B50CC /* Boy01_diffuse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Boy01_diffuse.jpg; sourceTree = "<group>"; };
+		5F13FE3A206B715C006B50CC /* Boy01_spec.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Boy01_spec.jpg; sourceTree = "<group>"; };
+		5F13FE3B206B715C006B50CC /* Boy01_normal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Boy01_normal.jpg; sourceTree = "<group>"; };
+		5F13FE3C206B715C006B50CC /* Boy01_FacialAnimMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Boy01_FacialAnimMap.png; sourceTree = "<group>"; };
+		5FDCC54C206B842D002C8D9D /* Boss_diffuse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Boss_diffuse.png; sourceTree = "<group>"; };
+		5FDCC54D206B842D002C8D9D /* Boss_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Boss_normal.png; sourceTree = "<group>"; };
+		5FDCC54E206B842D002C8D9D /* Boss_specular.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Boss_specular.png; sourceTree = "<group>"; };
+		5FDCC54F206B842D002C8D9D /* BossExcitedFixed.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = BossExcitedFixed.dae; sourceTree = "<group>"; };
+		5FDCC555206B843A002C8D9D /* Girl01_FacialAnimMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Girl01_FacialAnimMap.png; sourceTree = "<group>"; };
+		5FDCC556206B843A002C8D9D /* Girl01_spec.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Girl01_spec.jpg; sourceTree = "<group>"; };
+		5FDCC557206B843A002C8D9D /* Girl01_normal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Girl01_normal.jpg; sourceTree = "<group>"; };
+		5FDCC558206B843A002C8D9D /* Girl01_diffuse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Girl01_diffuse.jpg; sourceTree = "<group>"; };
+		5FDCC559206B843A002C8D9D /* ClaireIdleFixed.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = ClaireIdleFixed.dae; sourceTree = "<group>"; };
+		5FDCC55F206B8448002C8D9D /* GrannyBellydancingFixed.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = GrannyBellydancingFixed.dae; sourceTree = "<group>"; };
+		5FDCC561206B8448002C8D9D /* FitnessGrandma_FaceAnimMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FitnessGrandma_FaceAnimMap.png; sourceTree = "<group>"; };
+		5FDCC562206B8448002C8D9D /* FitnessGrandma_spec.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FitnessGrandma_spec.jpg; sourceTree = "<group>"; };
+		5FDCC563206B8448002C8D9D /* FitnessGrandma_diffuse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FitnessGrandma_diffuse.jpg; sourceTree = "<group>"; };
+		5FDCC564206B8448002C8D9D /* FitnessGrandma_normal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FitnessGrandma_normal.jpg; sourceTree = "<group>"; };
+		5FDCC56B206B8452002C8D9D /* OccupyGuy_normal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = OccupyGuy_normal.jpg; sourceTree = "<group>"; };
+		5FDCC56C206B8452002C8D9D /* OccupyGuy_spec.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = OccupyGuy_spec.jpg; sourceTree = "<group>"; };
+		5FDCC56D206B8452002C8D9D /* OccupyGuy_FaceAnimMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OccupyGuy_FaceAnimMap.png; sourceTree = "<group>"; };
+		5FDCC56E206B8452002C8D9D /* OccupyGuy_diffuse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = OccupyGuy_diffuse.jpg; sourceTree = "<group>"; };
+		5FDCC56F206B8452002C8D9D /* KayaIdleFixed.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = KayaIdleFixed.dae; sourceTree = "<group>"; };
+		5FDCC575206B845E002C8D9D /* TYHappyFixed.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = TYHappyFixed.dae; sourceTree = "<group>"; };
+		5FDCC577206B845E002C8D9D /* Boy_Hands_diffuse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Boy_Hands_diffuse.png; sourceTree = "<group>"; };
+		5FDCC578206B845E002C8D9D /* Boy_Head_diffuse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Boy_Head_diffuse.png; sourceTree = "<group>"; };
+		5FDCC579206B845E002C8D9D /* Boy_Scarf_diffuse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Boy_Scarf_diffuse.png; sourceTree = "<group>"; };
+		5FDCC57A206B845E002C8D9D /* Boy_UpperBody_diffuse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Boy_UpperBody_diffuse.png; sourceTree = "<group>"; };
+		5FDCC57B206B845E002C8D9D /* Boy_Shoes_diffuse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Boy_Shoes_diffuse.png; sourceTree = "<group>"; };
+		5FDCC57C206B845E002C8D9D /* Boy_Hair_diffuse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Boy_Hair_diffuse.png; sourceTree = "<group>"; };
+		5FDCC57D206B845E002C8D9D /* Boy_LowerBody_diffuse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Boy_LowerBody_diffuse.png; sourceTree = "<group>"; };
+		5FDCC586206B8468002C8D9D /* VegasHipHopFixed.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = VegasHipHopFixed.dae; sourceTree = "<group>"; };
+		5FDCC588206B8468002C8D9D /* Elvis_FaceAnimMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Elvis_FaceAnimMap.png; sourceTree = "<group>"; };
+		5FDCC589206B8468002C8D9D /* FatElvis_diffuse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FatElvis_diffuse.jpg; sourceTree = "<group>"; };
+		5FDCC58A206B8468002C8D9D /* FatElvis_normal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FatElvis_normal.jpg; sourceTree = "<group>"; };
+		638A9CEA1FBA0605001D52ED /* ARKitHorizontalPlaneDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKitHorizontalPlaneDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		638A9CED1FBA0605001D52ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		638A9CEF1FBA0605001D52ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		638A9CF21FBA0605001D52ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		638A9CF41FBA0605001D52ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		638A9CF71FBA0605001D52ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		638A9CF91FBA0605001D52ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		638A9D001FBA065D001D52ED /* ship.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ship.scn; sourceTree = "<group>"; };
+		638A9D011FBA065D001D52ED /* ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ship.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		638A9CE71FBA0605001D52ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F13FE38206B715C006B50CC /* textures */ = {
+			isa = PBXGroup;
+			children = (
+				5F13FE39206B715C006B50CC /* Boy01_diffuse.jpg */,
+				5F13FE3A206B715C006B50CC /* Boy01_spec.jpg */,
+				5F13FE3B206B715C006B50CC /* Boy01_normal.jpg */,
+				5F13FE3C206B715C006B50CC /* Boy01_FacialAnimMap.png */,
+			);
+			path = textures;
+			sourceTree = "<group>";
+		};
+		5FDCC54B206B842D002C8D9D /* BossTextures */ = {
+			isa = PBXGroup;
+			children = (
+				5FDCC54C206B842D002C8D9D /* Boss_diffuse.png */,
+				5FDCC54D206B842D002C8D9D /* Boss_normal.png */,
+				5FDCC54E206B842D002C8D9D /* Boss_specular.png */,
+			);
+			path = BossTextures;
+			sourceTree = "<group>";
+		};
+		5FDCC554206B843A002C8D9D /* ClaireTextures */ = {
+			isa = PBXGroup;
+			children = (
+				5FDCC555206B843A002C8D9D /* Girl01_FacialAnimMap.png */,
+				5FDCC556206B843A002C8D9D /* Girl01_spec.jpg */,
+				5FDCC557206B843A002C8D9D /* Girl01_normal.jpg */,
+				5FDCC558206B843A002C8D9D /* Girl01_diffuse.jpg */,
+			);
+			path = ClaireTextures;
+			sourceTree = "<group>";
+		};
+		5FDCC560206B8448002C8D9D /* GrannyTextures */ = {
+			isa = PBXGroup;
+			children = (
+				5FDCC561206B8448002C8D9D /* FitnessGrandma_FaceAnimMap.png */,
+				5FDCC562206B8448002C8D9D /* FitnessGrandma_spec.jpg */,
+				5FDCC563206B8448002C8D9D /* FitnessGrandma_diffuse.jpg */,
+				5FDCC564206B8448002C8D9D /* FitnessGrandma_normal.jpg */,
+			);
+			path = GrannyTextures;
+			sourceTree = "<group>";
+		};
+		5FDCC56A206B8452002C8D9D /* KayaTextures */ = {
+			isa = PBXGroup;
+			children = (
+				5FDCC56B206B8452002C8D9D /* OccupyGuy_normal.jpg */,
+				5FDCC56C206B8452002C8D9D /* OccupyGuy_spec.jpg */,
+				5FDCC56D206B8452002C8D9D /* OccupyGuy_FaceAnimMap.png */,
+				5FDCC56E206B8452002C8D9D /* OccupyGuy_diffuse.jpg */,
+			);
+			path = KayaTextures;
+			sourceTree = "<group>";
+		};
+		5FDCC576206B845E002C8D9D /* TYTextures */ = {
+			isa = PBXGroup;
+			children = (
+				5FDCC577206B845E002C8D9D /* Boy_Hands_diffuse.png */,
+				5FDCC578206B845E002C8D9D /* Boy_Head_diffuse.png */,
+				5FDCC579206B845E002C8D9D /* Boy_Scarf_diffuse.png */,
+				5FDCC57A206B845E002C8D9D /* Boy_UpperBody_diffuse.png */,
+				5FDCC57B206B845E002C8D9D /* Boy_Shoes_diffuse.png */,
+				5FDCC57C206B845E002C8D9D /* Boy_Hair_diffuse.png */,
+				5FDCC57D206B845E002C8D9D /* Boy_LowerBody_diffuse.png */,
+			);
+			path = TYTextures;
+			sourceTree = "<group>";
+		};
+		5FDCC587206B8468002C8D9D /* VegasTextures */ = {
+			isa = PBXGroup;
+			children = (
+				5FDCC588206B8468002C8D9D /* Elvis_FaceAnimMap.png */,
+				5FDCC589206B8468002C8D9D /* FatElvis_diffuse.jpg */,
+				5FDCC58A206B8468002C8D9D /* FatElvis_normal.jpg */,
+			);
+			path = VegasTextures;
+			sourceTree = "<group>";
+		};
+		638A9CE11FBA0604001D52ED = {
+			isa = PBXGroup;
+			children = (
+				638A9CEC1FBA0605001D52ED /* ARKitHorizontalPlaneDemo */,
+				638A9CEB1FBA0605001D52ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		638A9CEB1FBA0605001D52ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				638A9CEA1FBA0605001D52ED /* ARKitHorizontalPlaneDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		638A9CEC1FBA0605001D52ED /* ARKitHorizontalPlaneDemo */ = {
+			isa = PBXGroup;
+			children = (
+				5FDCC586206B8468002C8D9D /* VegasHipHopFixed.dae */,
+				5FDCC587206B8468002C8D9D /* VegasTextures */,
+				5FDCC575206B845E002C8D9D /* TYHappyFixed.dae */,
+				5FDCC576206B845E002C8D9D /* TYTextures */,
+				5FDCC56F206B8452002C8D9D /* KayaIdleFixed.dae */,
+				5FDCC56A206B8452002C8D9D /* KayaTextures */,
+				5FDCC55F206B8448002C8D9D /* GrannyBellydancingFixed.dae */,
+				5FDCC560206B8448002C8D9D /* GrannyTextures */,
+				5FDCC559206B843A002C8D9D /* ClaireIdleFixed.dae */,
+				5FDCC554206B843A002C8D9D /* ClaireTextures */,
+				5FDCC54F206B842D002C8D9D /* BossExcitedFixed.dae */,
+				5FDCC54B206B842D002C8D9D /* BossTextures */,
+				5F13FE37206B715C006B50CC /* AJIdleFixed.dae */,
+				5F13FE38206B715C006B50CC /* textures */,
+				638A9CFF1FBA0650001D52ED /* 3D Objects */,
+				638A9CED1FBA0605001D52ED /* AppDelegate.swift */,
+				638A9CEF1FBA0605001D52ED /* ViewController.swift */,
+				638A9CF11FBA0605001D52ED /* Main.storyboard */,
+				638A9CF41FBA0605001D52ED /* Assets.xcassets */,
+				638A9CF61FBA0605001D52ED /* LaunchScreen.storyboard */,
+				638A9CF91FBA0605001D52ED /* Info.plist */,
+			);
+			path = ARKitHorizontalPlaneDemo;
+			sourceTree = "<group>";
+		};
+		638A9CFF1FBA0650001D52ED /* 3D Objects */ = {
+			isa = PBXGroup;
+			children = (
+				638A9D011FBA065D001D52ED /* ship.png */,
+				638A9D001FBA065D001D52ED /* ship.scn */,
+			);
+			path = "3D Objects";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		638A9CE91FBA0605001D52ED /* ARKitHorizontalPlaneDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 638A9CFC1FBA0605001D52ED /* Build configuration list for PBXNativeTarget "ARKitHorizontalPlaneDemo" */;
+			buildPhases = (
+				638A9CE61FBA0605001D52ED /* Sources */,
+				638A9CE71FBA0605001D52ED /* Frameworks */,
+				638A9CE81FBA0605001D52ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARKitHorizontalPlaneDemo;
+			productName = ARKitHorizontalPlaneDemo;
+			productReference = 638A9CEA1FBA0605001D52ED /* ARKitHorizontalPlaneDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		638A9CE21FBA0604001D52ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Jayven Nhan";
+				TargetAttributes = {
+					638A9CE91FBA0605001D52ED = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 638A9CE51FBA0604001D52ED /* Build configuration list for PBXProject "ARKitHorizontalPlaneDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 638A9CE11FBA0604001D52ED;
+			productRefGroup = 638A9CEB1FBA0605001D52ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				638A9CE91FBA0605001D52ED /* ARKitHorizontalPlaneDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		638A9CE81FBA0605001D52ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FDCC58E206B8468002C8D9D /* FatElvis_normal.jpg in Resources */,
+				5FDCC58C206B8468002C8D9D /* Elvis_FaceAnimMap.png in Resources */,
+				5FDCC582206B845E002C8D9D /* Boy_UpperBody_diffuse.png in Resources */,
+				5FDCC574206B8452002C8D9D /* KayaIdleFixed.dae in Resources */,
+				638A9CF81FBA0605001D52ED /* LaunchScreen.storyboard in Resources */,
+				5FDCC571206B8452002C8D9D /* OccupyGuy_spec.jpg in Resources */,
+				5FDCC581206B845E002C8D9D /* Boy_Scarf_diffuse.png in Resources */,
+				5FDCC570206B8452002C8D9D /* OccupyGuy_normal.jpg in Resources */,
+				5FDCC55D206B843A002C8D9D /* Girl01_diffuse.jpg in Resources */,
+				638A9D031FBA065D001D52ED /* ship.png in Resources */,
+				5FDCC583206B845E002C8D9D /* Boy_Shoes_diffuse.png in Resources */,
+				5FDCC573206B8452002C8D9D /* OccupyGuy_diffuse.jpg in Resources */,
+				5FDCC580206B845E002C8D9D /* Boy_Head_diffuse.png in Resources */,
+				638A9CF51FBA0605001D52ED /* Assets.xcassets in Resources */,
+				5FDCC553206B842D002C8D9D /* BossExcitedFixed.dae in Resources */,
+				5FDCC584206B845E002C8D9D /* Boy_Hair_diffuse.png in Resources */,
+				5FDCC57E206B845E002C8D9D /* TYHappyFixed.dae in Resources */,
+				5FDCC552206B842D002C8D9D /* Boss_specular.png in Resources */,
+				5FDCC569206B8448002C8D9D /* FitnessGrandma_normal.jpg in Resources */,
+				5F13FE40206B715D006B50CC /* Boy01_normal.jpg in Resources */,
+				5FDCC58B206B8468002C8D9D /* VegasHipHopFixed.dae in Resources */,
+				5FDCC55C206B843A002C8D9D /* Girl01_normal.jpg in Resources */,
+				5FDCC567206B8448002C8D9D /* FitnessGrandma_spec.jpg in Resources */,
+				638A9D021FBA065D001D52ED /* ship.scn in Resources */,
+				5FDCC566206B8448002C8D9D /* FitnessGrandma_FaceAnimMap.png in Resources */,
+				5FDCC55B206B843A002C8D9D /* Girl01_spec.jpg in Resources */,
+				5FDCC55A206B843A002C8D9D /* Girl01_FacialAnimMap.png in Resources */,
+				5F13FE3D206B715D006B50CC /* AJIdleFixed.dae in Resources */,
+				5FDCC57F206B845E002C8D9D /* Boy_Hands_diffuse.png in Resources */,
+				5FDCC550206B842D002C8D9D /* Boss_diffuse.png in Resources */,
+				5F13FE3E206B715D006B50CC /* Boy01_diffuse.jpg in Resources */,
+				5FDCC565206B8448002C8D9D /* GrannyBellydancingFixed.dae in Resources */,
+				638A9CF31FBA0605001D52ED /* Main.storyboard in Resources */,
+				5FDCC585206B845E002C8D9D /* Boy_LowerBody_diffuse.png in Resources */,
+				5FDCC551206B842D002C8D9D /* Boss_normal.png in Resources */,
+				5FDCC568206B8448002C8D9D /* FitnessGrandma_diffuse.jpg in Resources */,
+				5F13FE3F206B715D006B50CC /* Boy01_spec.jpg in Resources */,
+				5FDCC572206B8452002C8D9D /* OccupyGuy_FaceAnimMap.png in Resources */,
+				5FDCC55E206B843A002C8D9D /* ClaireIdleFixed.dae in Resources */,
+				5FDCC58D206B8468002C8D9D /* FatElvis_diffuse.jpg in Resources */,
+				5F13FE41206B715D006B50CC /* Boy01_FacialAnimMap.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		638A9CE61FBA0605001D52ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				638A9CF01FBA0605001D52ED /* ViewController.swift in Sources */,
+				638A9CEE1FBA0605001D52ED /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		638A9CF11FBA0605001D52ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				638A9CF21FBA0605001D52ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		638A9CF61FBA0605001D52ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				638A9CF71FBA0605001D52ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		638A9CFA1FBA0605001D52ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		638A9CFB1FBA0605001D52ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		638A9CFD1FBA0605001D52ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 257YK6NZJW;
+				INFOPLIST_FILE = ARKitHorizontalPlaneDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yeonheelee.ARQueue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		638A9CFE1FBA0605001D52ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 257YK6NZJW;
+				INFOPLIST_FILE = ARKitHorizontalPlaneDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yeonheelee.ARQueue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		638A9CE51FBA0604001D52ED /* Build configuration list for PBXProject "ARKitHorizontalPlaneDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				638A9CFA1FBA0605001D52ED /* Debug */,
+				638A9CFB1FBA0605001D52ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		638A9CFC1FBA0605001D52ED /* Build configuration list for PBXNativeTarget "ARKitHorizontalPlaneDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				638A9CFD1FBA0605001D52ED /* Debug */,
+				638A9CFE1FBA0605001D52ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 638A9CE21FBA0604001D52ED /* Project object */;
+}
