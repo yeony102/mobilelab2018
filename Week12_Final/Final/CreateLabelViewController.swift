@@ -104,12 +104,9 @@ class CreateLabelViewController: UIViewController, UITextViewDelegate {
                     let pnote = PhotoNote(imageId: imageId!, label: lbl, date: dateString, textnote: txtNote)
                     
                     self.photonoteArray.append(pnote)
-//                    self.labelArray.append(lbl)
                     
                     // Save arrays into User Defaults
                     UserDefaults.standard.set(try? PropertyListEncoder().encode(self.photonoteArray), forKey: photonoteArrayKey)
-                    
-//                    UserDefaults.standard.set(try? PropertyListEncoder().encode(self.labelArray), forKey: labelArrayKey)
                     
                 }) { (success, error) in
                     print("Did succeed saving the photo to the album?", success, error)
@@ -158,7 +155,7 @@ class CreateLabelViewController: UIViewController, UITextViewDelegate {
     // This doesn't work 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         // Dismisses keyboard when done is pressed.
-        view.endEditing(true)
+        self.view.endEditing(true)
         return false
     }
     

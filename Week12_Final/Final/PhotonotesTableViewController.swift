@@ -23,10 +23,31 @@ class PhotonotesTableViewController: UITableViewController, UISearchBarDelegate 
         
         // Get data from user defaults and set data array
         if let photonotes = UserDefaults.standard.value(forKey: photonoteArrayKey) as? Data {
-            let photonoteArr = try? PropertyListDecoder().decode(Array<PhotoNote>.self, from: photonotes)
             
-            self.photonoteArray = photonoteArr!
-            self.currentPhotonoteArray = photonoteArr!
+            let propertyList = try? PropertyListDecoder().decode(Array<PhotoNote>.self, from: photonotes)
+            var pnotes = [PhotoNote]()
+            
+            // Check if there are any missing pictures
+            var pnotesUpdate = [PhotoNote]()
+            pnotes = propertyList!
+            
+            let n = pnotes.count
+            for i in 0...(n-1) {
+                let pnote = pnotes[i]
+                let results = PHAsset.fetchAssets(withLocalIdentifiers: [pnote.imageId], options: nil)
+                if results.firstObject != nil {
+                    pnotesUpdate.append(pnote)
+                }
+            }
+            
+            // Update the user defaults if there are any changes
+            if n != pnotesUpdate.count {
+                // Save arrays into User Defaults
+                UserDefaults.standard.set(try? PropertyListEncoder().encode(pnotesUpdate), forKey: photonoteArrayKey)
+            }
+            
+            self.photonoteArray = pnotesUpdate
+            self.currentPhotonoteArray = pnotesUpdate
         }
         
         setUpSearchBar()
