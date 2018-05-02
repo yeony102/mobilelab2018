@@ -16,6 +16,8 @@
 		5F83C77E209044E3003099E2 /* SavingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F83C77D209044E3003099E2 /* SavingViewController.swift */; };
 		5F83C78020904669003099E2 /* CreateLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F83C77F20904669003099E2 /* CreateLabelViewController.swift */; };
 		5F83C78220905500003099E2 /* LabelListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F83C78120905500003099E2 /* LabelListCell.swift */; };
+		5F991D272091422C00524764 /* ChooseLabelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F991D262091422C00524764 /* ChooseLabelTableViewController.swift */; };
+		5F991D29209142AE00524764 /* ChooseLabelTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F991D28209142AE00524764 /* ChooseLabelTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		5F83C77D209044E3003099E2 /* SavingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingViewController.swift; sourceTree = "<group>"; };
 		5F83C77F20904669003099E2 /* CreateLabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateLabelViewController.swift; sourceTree = "<group>"; };
 		5F83C78120905500003099E2 /* LabelListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelListCell.swift; sourceTree = "<group>"; };
+		5F991D262091422C00524764 /* ChooseLabelTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseLabelTableViewController.swift; sourceTree = "<group>"; };
+		5F991D28209142AE00524764 /* ChooseLabelTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseLabelTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,12 +69,14 @@
 				5F83C76920901BA6003099E2 /* AppDelegate.swift */,
 				5F83C76B20901BA6003099E2 /* CameraViewController.swift */,
 				5F83C77B20903D64003099E2 /* ReviewViewController.swift */,
-				5F83C77D209044E3003099E2 /* SavingViewController.swift */,
-				5F83C78120905500003099E2 /* LabelListCell.swift */,
+				5F991D262091422C00524764 /* ChooseLabelTableViewController.swift */,
 				5F83C77F20904669003099E2 /* CreateLabelViewController.swift */,
+				5F991D28209142AE00524764 /* ChooseLabelTableCell.swift */,
 				5F83C76D20901BA6003099E2 /* Main.storyboard */,
 				5F83C77020901BA8003099E2 /* Assets.xcassets */,
 				5F83C77220901BA8003099E2 /* LaunchScreen.storyboard */,
+				5F83C77D209044E3003099E2 /* SavingViewController.swift */,
+				5F83C78120905500003099E2 /* LabelListCell.swift */,
 				5F83C77520901BA8003099E2 /* Info.plist */,
 			);
 			path = Final;
@@ -151,7 +157,9 @@
 				5F83C78020904669003099E2 /* CreateLabelViewController.swift in Sources */,
 				5F83C77C20903D64003099E2 /* ReviewViewController.swift in Sources */,
 				5F83C76C20901BA6003099E2 /* CameraViewController.swift in Sources */,
+				5F991D272091422C00524764 /* ChooseLabelTableViewController.swift in Sources */,
 				5F83C78220905500003099E2 /* LabelListCell.swift in Sources */,
+				5F991D29209142AE00524764 /* ChooseLabelTableCell.swift in Sources */,
 				5F83C76A20901BA6003099E2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

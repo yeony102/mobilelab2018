@@ -9,13 +9,13 @@
 import Foundation
 import UIKit
 
-private let reuseIdentifier = "LabelListCell"
-let photonoteArrayKey = "PHOTONOTES"
-let labelArrayKey = "LABELS"
+//private let reuseIdentifier = "LabelListCell"
+//let photonoteArrayKey = "PHOTONOTES"
+//let labelArrayKey = "LABELS"
 
 
 class SavingViewController: UITableViewController {
-    
+/*
     var photonoteArray = [PhotoNote]()
     var labelArray = [String]()
     
@@ -88,6 +88,6 @@ class SavingViewController: UITableViewController {
         cell.label.text = label
         
         return cell
-    }
+    }*/
     
 }

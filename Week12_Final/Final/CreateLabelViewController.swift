@@ -9,7 +9,6 @@
 import UIKit
 import Photos
 
-//let ALBUM_TITLE = "Photonote"
 
 class CreateLabelViewController: UIViewController {
     
@@ -20,35 +19,17 @@ class CreateLabelViewController: UIViewController {
     
     @IBOutlet weak var labelTextField: UITextField!
     var image: UIImage!
-    var textnote: String?
-    
-    // Callback method to be defined in parent view controller.
-//    var didSaveNote: ((_ pnote: PhotoNote) -> ())?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Get data from user defaults and set data array
-        if let photonotes = UserDefaults.standard.value(forKey: photonoteArrayKey) as? Data {
-            let phtonoteArr = try? PropertyListDecoder().decode(Array<PhotoNote>.self, from: photonotes)
-            
-            self.photonoteArray = phtonoteArr!
-        }
-        
-        if let labels = UserDefaults.standard.value(forKey: labelArrayKey) as? Data {
-                        let labelArr = try? PropertyListDecoder().decode(Array<String>.self, from: labels)
-            self.labelArray = labelArr!
-//            self.labelArray = labels
-        }
     }
     
-    @IBAction func cancel_tapped(_ sender: UIBarButtonItem) {
+    @IBAction func cancel_touchUpInside(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
-    
-    @IBAction func save_tapped(_ sender: UIBarButtonItem) {
-        
+
+    @IBAction func save_touchUpInside(_ sender: UIButton) {
         if let lbl = labelTextField.text {
             
             // Make sure this app has a permission to access the library
@@ -79,26 +60,21 @@ class CreateLabelViewController: UIViewController {
                     addAssetRequest.addAssets([imagePlaceholder!] as NSArray)
                     
                     // User Defaults
-                    let pnote: PhotoNote
-                    if let txt = self.textnote {
-                        pnote = PhotoNote(imageId: imageId!, label: lbl, textnote: txt)
-                    } else {
-                        pnote = PhotoNote(imageId: imageId!, label: lbl, textnote: "No description")
-                    }
+                    let pnote = PhotoNote(imageId: imageId!, label: lbl, textnote: "No description")
                     
                     self.photonoteArray.append(pnote)
                     self.labelArray.append(lbl)
                     
                     // Save arrays into User Defaults
                     UserDefaults.standard.set(try? PropertyListEncoder().encode(self.photonoteArray), forKey: photonoteArrayKey)
-//                    UserDefaults.standard.set(self.labelArray, forKey: labelArrayKey)   // Does it needed to be Codable?
+                    
                     UserDefaults.standard.set(try? PropertyListEncoder().encode(self.labelArray), forKey: labelArrayKey)
                     
                 }) { (success, error) in
                     print("Did succeed saving the photo to the album?", success, error)
                 }
             }
-                
+            
             // Go back to CameraViewController
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             
@@ -111,10 +87,10 @@ class CreateLabelViewController: UIViewController {
             
             present(cameraVC, animated: true, completion: nil)
             //                    self.present(cameraVC, animated: true, completion: nil)
-                
+            
             
         } else {
-            let alert = UIAlertController(title: "Empty Label", message: "Please type a label name", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Empty Label", message: "Please name the new label", preferredStyle: .alert)
             let actionOK = UIAlertAction(title: "OK", style: .default) { (action) in
                 print("ALERT CLOSED")
             }
@@ -123,7 +99,6 @@ class CreateLabelViewController: UIViewController {
             
             self.present(alert, animated: true, completion: nil)
         }
-        
         
     }
     
