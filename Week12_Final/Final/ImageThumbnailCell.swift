@@ -1,5 +1,5 @@
 //
-//  ChooseLabelViewController.swift
+//  ImageThumbnailCell.swift
 //  Final
 //
 //  Created by Yeonhee Lee on 4/25/18.
@@ -7,13 +7,9 @@
 //
 
 import UIKit
+import Photos
 
-
-class ChooseLabelTableCell: UITableViewCell {
+class ImageThumbnailCell: UICollectionViewCell {
     
     @IBOutlet weak var label: UILabel!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
 }

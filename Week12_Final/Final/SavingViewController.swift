@@ -9,13 +9,11 @@
 import Foundation
 import UIKit
 
-//private let reuseIdentifier = "LabelListCell"
-//let photonoteArrayKey = "PHOTONOTES"
-//let labelArrayKey = "LABELS"
+
 
 
 class SavingViewController: UITableViewController {
-/*
+ /*
     var photonoteArray = [PhotoNote]()
     var labelArray = [String]()
     
@@ -35,13 +33,12 @@ class SavingViewController: UITableViewController {
             self.photonoteArray = phtonoteArr!
         }
         
-        if let labels = UserDefaults.standard.value(forKey: labelArrayKey) as? [String] {
-//            let labelArr = try? PropertyListDecoder().decode(Array<String>.self, from: labels)
-//            self.labelArray = labelArr
-            self.labelArray = labels
-            
-            self.tableView.reloadData()
-        }
+         if let labels = UserDefaults.standard.value(forKey: labelArrayKey) as? Data {
+         let labelArr = try? PropertyListDecoder().decode(Array<String>.self, from: labels)
+         self.labelArray = labelArr!
+     
+         self.tableView.reloadData()
+         }
     }
     
     @IBAction func cancel_touchUpInside(_ sender: Any) {
@@ -88,6 +85,6 @@ class SavingViewController: UITableViewController {
         cell.label.text = label
         
         return cell
-    }*/
-    
+    }
+    */
 }

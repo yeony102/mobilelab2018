@@ -9,6 +9,7 @@
 import UIKit
 import Photos
 
+//let ALBUM_TITLE = "Photonote"
 
 class CreateLabelViewController: UIViewController {
     
@@ -20,16 +21,32 @@ class CreateLabelViewController: UIViewController {
     @IBOutlet weak var labelTextField: UITextField!
     var image: UIImage!
     
+    // Callback method to be defined in parent view controller.
+//    var didSaveNote: ((_ pnote: PhotoNote) -> ())?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Get data from user defaults and set data array
+ /*       if let photonotes = UserDefaults.standard.value(forKey: photonoteArrayKey) as? Data {
+            let phtonoteArr = try? PropertyListDecoder().decode(Array<PhotoNote>.self, from: photonotes)
+            
+            self.photonoteArray = phtonoteArr!
+        }
+        
+        if let labels = UserDefaults.standard.value(forKey: labelArrayKey) as? Data {
+                        let labelArr = try? PropertyListDecoder().decode(Array<String>.self, from: labels)
+            self.labelArray = labelArr!
+        }
+        */
     }
     
-    @IBAction func cancel_touchUpInside(_ sender: UIButton) {
-        self.dismiss(animated: true, completion: nil)
+    @IBAction func cancel_tapped(_ sender: UIButton) {
+            self.dismiss(animated: true, completion: nil)
     }
 
-    @IBAction func save_touchUpInside(_ sender: UIButton) {
+    @IBAction func save_tapped(_ sender: UIButton) {
         if let lbl = labelTextField.text {
             
             // Make sure this app has a permission to access the library

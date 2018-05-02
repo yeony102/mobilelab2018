@@ -1,23 +1,20 @@
 //
-//  ChooseLabelViewController.swift
+//  PhotonotesViewController.swift
 //  Final
 //
 //  Created by Yeonhee Lee on 4/25/18.
 //  Copyright © 2018 yeonheelee. All rights reserved.
 //
 
+private let reuseIdentifier = "ExistingLabelListCell"
+
 import UIKit
+import Photos
 
-private let reuseIdentifier = "ChooseLabelTableCell"
-let photonoteArrayKey = "PHOTONOTES"
-let labelArrayKey = "LABELS"
-
-class ChooseLabelTableViewController: UITableViewController {
-    var image: UIImage!
+class PhotonotesViewController: UITableViewController {
     
     var photonoteArray = [PhotoNote]()
     var labelArray = [String]()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,10 +32,14 @@ class ChooseLabelTableViewController: UITableViewController {
             
             self.tableView.reloadData()
         }
+        
+    }
+    
+    @IBAction func camera_tapped(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
     }
     
     // Table view data source
-    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -49,32 +50,27 @@ class ChooseLabelTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // get custom cell object
-        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! ChooseLabelTableCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! LabelListCell
         
-        let label = self.labelArray[indexPath.row]
+        let label = labelArray[indexPath.row]
+        
+        ///////// need to add the count label !!!!
+        //////// create an array for each label and pass them to the collection view via segue
         
         cell.label.text = label
         
         return cell
     }
     
-//    @IBAction func cancel_tapped(_ sender: UIBarButtonItem) {
-//        dismiss(animated: true, completion: nil)
-//    }
-    
-    @IBAction func add_tapped(_ sender: UIBarButtonItem) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        guard let createLabelVC = storyboard.instantiateViewController(withIdentifier: "CreateLabelViewController") as? CreateLabelViewController else {
-            print("Error instantiating CreateLabelViewController")
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let selectedRow = tableView.indexPathForSelectedRow?.row else {
             return
         }
         
-        createLabelVC.photonoteArray = self.photonoteArray
-        createLabelVC.labelArray = self.labelArray
-        createLabelVC.image = self.image
+        print("Selected Table Row: \(selectedRow)")
         
-        present(createLabelVC, animated: true, completion: nil)
+         let labelCollectionVC = segue.destination as! LabelCollectionViewController
+        
+        
     }
-    
-    
 }
