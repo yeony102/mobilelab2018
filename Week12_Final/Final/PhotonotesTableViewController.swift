@@ -56,6 +56,12 @@ class PhotonotesTableViewController: UITableViewController {
         cell.label.text = pnote.label
         cell.date.text = pnote.date
         
+        // NL: Fetch asset using imageId, get thumbnail image and set to cell thumbnail.
+        let results = PHAsset.fetchAssets(withLocalIdentifiers: [pnote.imageId], options: nil)
+        if let phasset = results.firstObject {
+            cell.thumbnail.image = getAssetThumbnail(asset: phasset)
+        }
+        
         return cell
     }
     
@@ -76,7 +82,13 @@ class PhotonotesTableViewController: UITableViewController {
 //        print(pnote.label)
 //        print(pnote.textnote!)
         
-        fullVC.image = UIImage(named: filename)
+        // NL: Fetch asset using imageId, get full size image and set to imageView image.
+        let results = PHAsset.fetchAssets(withLocalIdentifiers: [pnote.imageId], options: nil)
+        if let phasset = results.firstObject {
+            fullVC.image = getAssetFullImage(asset: phasset)
+        }
+
+
         fullVC.label = pnote.label
         fullVC.txtNote = pnote.textnote!
 
@@ -84,4 +96,33 @@ class PhotonotesTableViewController: UITableViewController {
         present(fullVC, animated: true, completion: nil)
     }
     
+    // NL: Helper method to convert PHAsset to thumbnail UIImage
+    func getAssetThumbnail(asset: PHAsset) -> UIImage {
+        let manager = PHImageManager.default()
+
+        let option = PHImageRequestOptions()
+        option.isSynchronous = true
+
+        var thumbnail = UIImage()
+        manager.requestImage(for: asset, targetSize: CGSize(width: 100, height: 100), contentMode: .aspectFill, options: option) { (image: UIImage?, _) in
+            thumbnail = image!
+        }
+        return thumbnail
+    }
+
+    // NL: Helper method to convert PHAsset to full UIImage
+    func getAssetFullImage(asset: PHAsset) -> UIImage {
+        let manager = PHImageManager.default()
+
+        let option = PHImageRequestOptions()
+        option.deliveryMode = PHImageRequestOptionsDeliveryMode.highQualityFormat
+        option.isSynchronous = true
+
+        var fullImage = UIImage()
+        manager.requestImage(for: asset, targetSize: PHImageManagerMaximumSize, contentMode: PHImageContentMode.default, options: option) { (image: UIImage?, _) in
+            fullImage = image!
+        }
+        return fullImage
+    }
+
 }
