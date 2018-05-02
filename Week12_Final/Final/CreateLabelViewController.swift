@@ -10,8 +10,9 @@ import UIKit
 import Photos
 
 let photonoteArrayKey = "PHOTONOTES"
+private let placeholder = "Description"
 
-class CreateLabelViewController: UIViewController {
+class CreateLabelViewController: UIViewController, UITextViewDelegate {
     
     var photonoteArray = [PhotoNote]()
     
@@ -40,6 +41,12 @@ class CreateLabelViewController: UIViewController {
         cardView.layer.shadowRadius = 1.5
         cardView.layer.shadowOpacity = 0.5
         cardView.layer.cornerRadius = 5
+        
+        // Text view placeholder
+        noteTextField.delegate = self
+        
+        noteTextField.text = placeholder
+        noteTextField.textColor = UIColor.lightGray
 
     }
     
@@ -131,6 +138,22 @@ class CreateLabelViewController: UIViewController {
         }
         
     }
+    
+    // Placeholder for the text view
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if noteTextField.textColor == UIColor.lightGray {
+            noteTextField.text = nil
+            noteTextField.textColor = UIColor.black
+        }
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if noteTextField.text.isEmpty {
+            noteTextField.textColor = UIColor.lightGray
+            noteTextField.text = placeholder
+        }
+    }
+    
     
     // This doesn't work 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
