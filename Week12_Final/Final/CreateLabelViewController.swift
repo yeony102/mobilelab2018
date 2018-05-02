@@ -10,12 +10,10 @@ import UIKit
 import Photos
 
 let photonoteArrayKey = "PHOTONOTES"
-//let labelArrayKey = "LABELS"
 
 class CreateLabelViewController: UIViewController {
     
     var photonoteArray = [PhotoNote]()
-//    var labelArray = [String]()
     
     let library = PHPhotoLibrary.shared()
     
@@ -34,11 +32,7 @@ class CreateLabelViewController: UIViewController {
             
             self.photonoteArray = phtonoteArr!
         }
-        
-//        if let labels = UserDefaults.standard.value(forKey: labelArrayKey) as? Data {
-//            let labelArr = try? PropertyListDecoder().decode(Array<String>.self, from: labels)
-//            self.labelArray = labelArr!
-//        }
+
     }
     
     @IBAction func cancel_touchUpInside(_ sender: UIButton) {
@@ -128,6 +122,7 @@ class CreateLabelViewController: UIViewController {
         
     }
     
+    // This doesn't work 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         // Dismisses keyboard when done is pressed.
         view.endEditing(true)

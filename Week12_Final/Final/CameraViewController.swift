@@ -42,6 +42,8 @@ class CameraViewController: UIViewController {
         startRunningCaptureSession()
     }
 
+    // MARK: Setting up the camera
+    
     func createAlbum() {
         let library = PHPhotoLibrary.shared()
         
@@ -109,6 +111,7 @@ class CameraViewController: UIViewController {
         captureSession.startRunning()
     }
     
+    // Take a picture
     @IBAction func cameraButton_touchUpInside(_ sender: Any) {
         let settings = AVCapturePhotoSettings()
         photoOutput?.capturePhoto(with: settings, delegate: self)
@@ -119,6 +122,22 @@ class CameraViewController: UIViewController {
             let reviewVC = segue.destination as! ReviewViewController
             reviewVC.image = self.image
         }
+    }
+ 
+    
+    // when the Photonotes button on the top left corner is tapped, present the image lists (PhotonotesTableViewController)
+    @IBAction func photonotes_touchUpInside(_ sender: UIButton) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        guard let photonoteTVC = storyboard.instantiateViewController(withIdentifier: "PhotonotesTableViewController") as? PhotonotesTableViewController else {
+            print("Error initiating PhotonotesTableViewController")
+            return
+        }
+    
+        let nc = UINavigationController(rootViewController: photonoteTVC)
+        
+        present(nc, animated: true, completion: nil)
+        
     }
 }
 

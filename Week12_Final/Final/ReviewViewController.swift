@@ -24,6 +24,7 @@ class ReviewViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    // When the Next button on the top right corner is tapped, present the Create Label screen (CreateLabelViewController)
     @IBAction func next_touchUpInside(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         guard let createLabelVC = storyboard.instantiateViewController(withIdentifier: "CreateLabelViewController") as? CreateLabelViewController else {
