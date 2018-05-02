@@ -17,8 +17,9 @@ class CreateLabelViewController: UIViewController {
     
     let library = PHPhotoLibrary.shared()
     
+    @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var labelTextField: UITextField!
-    @IBOutlet weak var noteTextField: UITextField!
+    @IBOutlet weak var noteTextField: UITextView!
     
     var image: UIImage!
     
@@ -32,6 +33,13 @@ class CreateLabelViewController: UIViewController {
             
             self.photonoteArray = phtonoteArr!
         }
+        
+        // Styles
+        cardView.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1).cgColor
+        cardView.layer.shadowOffset = CGSize(width: 0.75, height: 0.75)
+        cardView.layer.shadowRadius = 1.5
+        cardView.layer.shadowOpacity = 0.5
+        cardView.layer.cornerRadius = 5
 
     }
     
@@ -47,10 +55,12 @@ class CreateLabelViewController: UIViewController {
             
             // Get the string in the Note field
             let txtNote: String!
-            if self.noteTextField.text != "" {
-                txtNote = self.noteTextField.text
-            } else {
+            if self.noteTextField.text == "Description" {
                 txtNote = "No description"
+            } else if self.noteTextField.text == "" {
+                txtNote = "No description"
+            } else {
+                txtNote = self.noteTextField.text
             }
             
             // Make sure this app has a permission to access the library

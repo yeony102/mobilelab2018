@@ -21,6 +21,8 @@ struct PhotoNote: Codable {
 
 class CameraViewController: UIViewController {
     
+    @IBOutlet var cameraButton: UIButton!
+    
     var captureSession = AVCaptureSession()
     var backCamera: AVCaptureDevice?
     var frontCamera: AVCaptureDevice?
@@ -34,6 +36,9 @@ class CameraViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        cameraButton.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1).cgColor
+//        cameraButton.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
         createAlbum()
         setupCaptureSession()
         setupDevice()
