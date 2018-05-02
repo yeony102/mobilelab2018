@@ -17,7 +17,6 @@
 		5FFCE58F20943F7100D8E441 /* PhotonotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFCE58E20943F7100D8E441 /* PhotonotesTableViewController.swift */; };
 		5FFCE59120943F8300D8E441 /* PhotonotesTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFCE59020943F8300D8E441 /* PhotonotesTableCell.swift */; };
 		5FFCE59320943F9400D8E441 /* FullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFCE59220943F9400D8E441 /* FullViewController.swift */; };
-		5FFCE5972094FA7900D8E441 /* IMG_0057.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 5FFCE5962094FA7900D8E441 /* IMG_0057.PNG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +32,6 @@
 		5FFCE58E20943F7100D8E441 /* PhotonotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotonotesTableViewController.swift; sourceTree = "<group>"; };
 		5FFCE59020943F8300D8E441 /* PhotonotesTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotonotesTableCell.swift; sourceTree = "<group>"; };
 		5FFCE59220943F9400D8E441 /* FullViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullViewController.swift; sourceTree = "<group>"; };
-		5FFCE5962094FA7900D8E441 /* IMG_0057.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0057.PNG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,20 +72,11 @@
 				5FFCE59020943F8300D8E441 /* PhotonotesTableCell.swift */,
 				5FFCE59220943F9400D8E441 /* FullViewController.swift */,
 				5F83C76D20901BA6003099E2 /* Main.storyboard */,
-				5FFCE59520945C6900D8E441 /* image */,
 				5F83C77020901BA8003099E2 /* Assets.xcassets */,
 				5F83C77220901BA8003099E2 /* LaunchScreen.storyboard */,
 				5F83C77520901BA8003099E2 /* Info.plist */,
 			);
 			path = Final;
-			sourceTree = "<group>";
-		};
-		5FFCE59520945C6900D8E441 /* image */ = {
-			isa = PBXGroup;
-			children = (
-				5FFCE5962094FA7900D8E441 /* IMG_0057.PNG */,
-			);
-			path = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,7 +140,6 @@
 				5F83C77420901BA8003099E2 /* LaunchScreen.storyboard in Resources */,
 				5F83C77120901BA8003099E2 /* Assets.xcassets in Resources */,
 				5F83C76F20901BA6003099E2 /* Main.storyboard in Resources */,
-				5FFCE5972094FA7900D8E441 /* IMG_0057.PNG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

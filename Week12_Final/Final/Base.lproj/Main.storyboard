@@ -230,9 +230,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="RSu-Kg-Zg2">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhotonotesTableCell" rowHeight="87" id="ReB-l1-ghB" customClass="PhotonotesTableCell" customModule="Final" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="87"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="87"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ReB-l1-ghB" id="RLf-DG-6mc">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="86.5"/>
@@ -291,6 +296,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="searchBar" destination="RSu-Kg-Zg2" id="UY3-wu-OeY"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Qa-oJ-hRg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

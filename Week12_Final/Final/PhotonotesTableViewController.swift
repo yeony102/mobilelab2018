@@ -10,29 +10,61 @@ import UIKit
 import Photos
 
 private let reuseIdentifier = "PhotonotesTableCell"
-private let filename = "IMG_0057.PNG"   // temporary image
 
-class PhotonotesTableViewController: UITableViewController {
+class PhotonotesTableViewController: UITableViewController, UISearchBarDelegate {
+    
+    @IBOutlet weak var searchBar: UISearchBar!
     
     var photonoteArray = [PhotoNote]()
+    var currentPhotonoteArray = [PhotoNote]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Get data from user defaults and set data array
         if let photonotes = UserDefaults.standard.value(forKey: photonoteArrayKey) as? Data {
-            let phtonoteArr = try? PropertyListDecoder().decode(Array<PhotoNote>.self, from: photonotes)
+            let photonoteArr = try? PropertyListDecoder().decode(Array<PhotoNote>.self, from: photonotes)
             
-            self.photonoteArray = phtonoteArr!
+            self.photonoteArray = photonoteArr!
+            self.currentPhotonoteArray = photonoteArr!
         }
+        
+        setUpSearchBar()
         
     }
     
-    // When the camera button on the top left corner is tapped, go back to the previous screen (CameraViewController)
+    private func setUpSearchBar() {
+        searchBar.delegate = self
+    }
+    
+    
+    // Go back to CameraViewController when the camera button is tapped
     @IBAction func camera_tapped(_ sender: UIBarButtonItem) {
 
         dismiss(animated: true, completion: nil)
     }
+    
+
+    // Search
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        guard !searchText.isEmpty else {
+            currentPhotonoteArray = photonoteArray
+            self.tableView.reloadData()
+            return
+        }
+        currentPhotonoteArray = photonoteArray.filter({ pnote -> Bool in
+//            guard let keyword = searchBar.text else { return false }
+             pnote.label.lowercased().contains(searchText.lowercased())
+        })
+        self.tableView.reloadData()
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        self.searchBar.endEditing(true)
+    }
+    
     
     // MARK: - Table view data source
     
@@ -43,16 +75,15 @@ class PhotonotesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         // Return the row data count.
-        return photonoteArray.count
+        return currentPhotonoteArray.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Get custom cell object.
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! PhotonotesTableCell
         
-        let pnote = photonoteArray[indexPath.row]
+        let pnote = currentPhotonoteArray[indexPath.row]
         
-        cell.thumbnail.image = UIImage(named: filename)
         cell.label.text = pnote.label
         cell.date.text = pnote.date
         
@@ -69,7 +100,7 @@ class PhotonotesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         
-        let pnote = photonoteArray[indexPath.row]
+        let pnote = currentPhotonoteArray[indexPath.row]
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
@@ -77,8 +108,7 @@ class PhotonotesTableViewController: UITableViewController {
             print("Error instantiating FullViewController")
             return
         }
-        
-//        print(filename)
+   
 //        print(pnote.label)
 //        print(pnote.textnote!)
         
