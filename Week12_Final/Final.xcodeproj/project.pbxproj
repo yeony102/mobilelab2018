@@ -13,14 +13,7 @@
 		5F83C77120901BA8003099E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F83C77020901BA8003099E2 /* Assets.xcassets */; };
 		5F83C77420901BA8003099E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F83C77220901BA8003099E2 /* LaunchScreen.storyboard */; };
 		5F83C77C20903D64003099E2 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F83C77B20903D64003099E2 /* ReviewViewController.swift */; };
-		5F83C77E209044E3003099E2 /* SavingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F83C77D209044E3003099E2 /* SavingViewController.swift */; };
 		5F83C78020904669003099E2 /* CreateLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F83C77F20904669003099E2 /* CreateLabelViewController.swift */; };
-		5F83C7842090EF9C003099E2 /* ChooseLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F83C7832090EF9C003099E2 /* ChooseLabelViewController.swift */; };
-		5F83C7862090F0BA003099E2 /* LabelListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F83C7852090F0BA003099E2 /* LabelListCell.swift */; };
-		5F991D1F2091075F00524764 /* PhotonotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F991D1E2091075F00524764 /* PhotonotesViewController.swift */; };
-		5F991D212091089000524764 /* ExistingLabelListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F991D202091089000524764 /* ExistingLabelListCell.swift */; };
-		5F991D2320910D1300524764 /* ImageThumbnailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F991D2220910D1300524764 /* ImageThumbnailCell.swift */; };
-		5F991D2520910D4300524764 /* LabelCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F991D2420910D4300524764 /* LabelCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,14 +25,7 @@
 		5F83C77320901BA8003099E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F83C77520901BA8003099E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F83C77B20903D64003099E2 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
-		5F83C77D209044E3003099E2 /* SavingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingViewController.swift; sourceTree = "<group>"; };
 		5F83C77F20904669003099E2 /* CreateLabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateLabelViewController.swift; sourceTree = "<group>"; };
-		5F83C7832090EF9C003099E2 /* ChooseLabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseLabelViewController.swift; sourceTree = "<group>"; };
-		5F83C7852090F0BA003099E2 /* LabelListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelListCell.swift; sourceTree = "<group>"; };
-		5F991D1E2091075F00524764 /* PhotonotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotonotesViewController.swift; sourceTree = "<group>"; };
-		5F991D202091089000524764 /* ExistingLabelListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExistingLabelListCell.swift; sourceTree = "<group>"; };
-		5F991D2220910D1300524764 /* ImageThumbnailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageThumbnailCell.swift; sourceTree = "<group>"; };
-		5F991D2420910D4300524764 /* LabelCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,14 +61,7 @@
 				5F83C76920901BA6003099E2 /* AppDelegate.swift */,
 				5F83C76B20901BA6003099E2 /* CameraViewController.swift */,
 				5F83C77B20903D64003099E2 /* ReviewViewController.swift */,
-				5F83C77D209044E3003099E2 /* SavingViewController.swift */,
-				5F83C7832090EF9C003099E2 /* ChooseLabelViewController.swift */,
-				5F83C7852090F0BA003099E2 /* LabelListCell.swift */,
 				5F83C77F20904669003099E2 /* CreateLabelViewController.swift */,
-				5F991D1E2091075F00524764 /* PhotonotesViewController.swift */,
-				5F991D202091089000524764 /* ExistingLabelListCell.swift */,
-				5F991D2420910D4300524764 /* LabelCollectionViewController.swift */,
-				5F991D2220910D1300524764 /* ImageThumbnailCell.swift */,
 				5F83C76D20901BA6003099E2 /* Main.storyboard */,
 				5F83C77020901BA8003099E2 /* Assets.xcassets */,
 				5F83C77220901BA8003099E2 /* LaunchScreen.storyboard */,
@@ -162,16 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F83C7862090F0BA003099E2 /* LabelListCell.swift in Sources */,
-				5F83C77E209044E3003099E2 /* SavingViewController.swift in Sources */,
-				5F991D2320910D1300524764 /* ImageThumbnailCell.swift in Sources */,
 				5F83C78020904669003099E2 /* CreateLabelViewController.swift in Sources */,
-				5F991D2520910D4300524764 /* LabelCollectionViewController.swift in Sources */,
-				5F991D1F2091075F00524764 /* PhotonotesViewController.swift in Sources */,
 				5F83C77C20903D64003099E2 /* ReviewViewController.swift in Sources */,
 				5F83C76C20901BA6003099E2 /* CameraViewController.swift in Sources */,
-				5F83C7842090EF9C003099E2 /* ChooseLabelViewController.swift in Sources */,
-				5F991D212091089000524764 /* ExistingLabelListCell.swift in Sources */,
 				5F83C76A20901BA6003099E2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

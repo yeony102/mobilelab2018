@@ -9,45 +9,55 @@
 import UIKit
 import Photos
 
-//let ALBUM_TITLE = "Photonote"
+let photonoteArrayKey = "PHOTONOTES"
+//let labelArrayKey = "LABELS"
 
 class CreateLabelViewController: UIViewController {
     
     var photonoteArray = [PhotoNote]()
-    var labelArray = [String]()
+//    var labelArray = [String]()
     
     let library = PHPhotoLibrary.shared()
     
     @IBOutlet weak var labelTextField: UITextField!
-    var image: UIImage!
+    @IBOutlet weak var noteTextField: UITextField!
     
-    // Callback method to be defined in parent view controller.
-//    var didSaveNote: ((_ pnote: PhotoNote) -> ())?
+    var image: UIImage!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Get data from user defaults and set data array
- /*       if let photonotes = UserDefaults.standard.value(forKey: photonoteArrayKey) as? Data {
+        if let photonotes = UserDefaults.standard.value(forKey: photonoteArrayKey) as? Data {
             let phtonoteArr = try? PropertyListDecoder().decode(Array<PhotoNote>.self, from: photonotes)
             
             self.photonoteArray = phtonoteArr!
         }
         
-        if let labels = UserDefaults.standard.value(forKey: labelArrayKey) as? Data {
-                        let labelArr = try? PropertyListDecoder().decode(Array<String>.self, from: labels)
-            self.labelArray = labelArr!
-        }
-        */
+//        if let labels = UserDefaults.standard.value(forKey: labelArrayKey) as? Data {
+//            let labelArr = try? PropertyListDecoder().decode(Array<String>.self, from: labels)
+//            self.labelArray = labelArr!
+//        }
     }
     
-    @IBAction func cancel_tapped(_ sender: UIButton) {
-            self.dismiss(animated: true, completion: nil)
+    @IBAction func cancel_touchUpInside(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
     }
 
-    @IBAction func save_tapped(_ sender: UIButton) {
-        if let lbl = labelTextField.text {
+    @IBAction func save_touchUpInside(_ sender: UIButton) {
+        
+        if labelTextField.text != "" {
+            
+            let lbl = labelTextField.text!
+            
+            // Get the string in the Note field
+            let txtNote: String!
+            if self.noteTextField.text != "" {
+                txtNote = self.noteTextField.text
+            } else {
+                txtNote = "No description"
+            }
             
             // Make sure this app has a permission to access the library
             // Make sure we have permission to access the library
@@ -76,16 +86,19 @@ class CreateLabelViewController: UIViewController {
                     
                     addAssetRequest.addAssets([imagePlaceholder!] as NSArray)
                     
+                    // Get current time and date.
+                    let dateString = NSDate().description
+                    
                     // User Defaults
-                    let pnote = PhotoNote(imageId: imageId!, label: lbl, textnote: "No description")
+                    let pnote = PhotoNote(imageId: imageId!, label: lbl, date: dateString, textnote: txtNote)
                     
                     self.photonoteArray.append(pnote)
-                    self.labelArray.append(lbl)
+//                    self.labelArray.append(lbl)
                     
                     // Save arrays into User Defaults
                     UserDefaults.standard.set(try? PropertyListEncoder().encode(self.photonoteArray), forKey: photonoteArrayKey)
                     
-                    UserDefaults.standard.set(try? PropertyListEncoder().encode(self.labelArray), forKey: labelArrayKey)
+//                    UserDefaults.standard.set(try? PropertyListEncoder().encode(self.labelArray), forKey: labelArrayKey)
                     
                 }) { (success, error) in
                     print("Did succeed saving the photo to the album?", success, error)
@@ -100,11 +113,7 @@ class CreateLabelViewController: UIViewController {
                 return
             }
             
-            // cameraVC.modalTransitionStyle = .flipHorizontal
-            
             present(cameraVC, animated: true, completion: nil)
-            //                    self.present(cameraVC, animated: true, completion: nil)
-            
             
         } else {
             let alert = UIAlertController(title: "Empty Label", message: "Please name the new label", preferredStyle: .alert)

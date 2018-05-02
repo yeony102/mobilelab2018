@@ -15,6 +15,7 @@ let ALBUM_TITLE = "Photonote"
 struct PhotoNote: Codable {
         let imageId: String
         var label: String
+        var date: String
         var textnote: String?
 }
 
@@ -107,18 +108,6 @@ class CameraViewController: UIViewController {
     func startRunningCaptureSession() {
         captureSession.startRunning()
     }
-    
-//    @IBAction func photonotes_touchUpInside(_ sender: UIButton) {
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        guard let photonotesVC = storyboard.instantiateViewController(withIdentifier: "PhotonotesViewController") as? PhotonotesViewController else {
-//            print("Error instantiating PhotonotesViewController")
-//            return
-//        }
-//
-//        let nc = UINavigationController(rootViewController: photonotesVC)
-//
-//        present(nc, animated: true, completion: nil)
-//    }
     
     @IBAction func cameraButton_touchUpInside(_ sender: Any) {
         let settings = AVCapturePhotoSettings()

@@ -9,12 +9,6 @@
 import UIKit
 import Photos
 
-//struct PhotoNote: Codable {
-//    let imageId: String
-//    var label: String
-//    var textnote: String?
-//}
-
 class ReviewViewController: UIViewController {
 
     @IBOutlet weak var photo: UIImageView!
@@ -26,22 +20,19 @@ class ReviewViewController: UIViewController {
     }
     
     @IBAction func cancel_touchUpInside(_ sender: UIButton) {
+        
         dismiss(animated: true, completion: nil)
     }
     
     @IBAction func next_touchUpInside(_ sender: UIButton) {
-        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        guard let chooseLabelVC = storyboard.instantiateViewController(withIdentifier: "ChooseLabelViewController") as? ChooseLabelViewController else {
+        guard let createLabelVC = storyboard.instantiateViewController(withIdentifier: "CreateLabelViewController") as? CreateLabelViewController else {
             print("Error instantiating CreateViewController")
             return
         }
-        chooseLabelVC.image = self.image
+        createLabelVC.image = self.image
         
-        let nc = UINavigationController(rootViewController: chooseLabelVC)
-        
-        present(nc, animated: true, completion: nil)
-    }
+        present(createLabelVC, animated: true, completion: nil)
     
-   
+    }
 }
